@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lyf.navneet.in.phpapisamp.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/settings"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_name"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/logo"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/name"
+        android:hint="Enter Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_password"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/input_name"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/password"
+            android:hint="Enter Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_email"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/input_password"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/email"
+            android:hint="Enter Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:alpha="0.5"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <Button
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button"
+        android:transitionName="register"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadJSON"
+        android:text="REGISTER" />
+    <Button
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/login"
+        android:transitionName="login"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN" />
+</RelativeLayout>
